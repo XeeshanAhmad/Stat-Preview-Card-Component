@@ -1,0 +1,153 @@
+/* mobile design */
+body{
+  background-color: hsl(233, 47%, 7%);
+  color: white;
+  Font size: 15px
+}
+
+/* image css */
+
+img{
+  width: 340px;
+  border-radius: 8px 8px 0 0;
+  display: block;
+  opacity: 0.5;
+}
+
+.image-part{
+  background-color: hsl(277, 64%, 61%);
+  border-radius: 8px 8px 0 0;
+}
+
+.image-desktop{
+  display: none;
+}
+
+/* card css */
+
+.card{
+  background-color: hsl(244, 38%, 16%);
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 20px 10px;
+  border-radius: 0 0 8px 8px;
+}
+
+/* all text setting */
+
+h1{
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+span{
+  color: hsl(277, 64%, 61%);
+}
+
+p{
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 10;
+  font-size: 0.8rem;
+}
+
+.text-part{
+  padding: 20px;
+  text-align: center;
+}
+
+/* ul css */
+
+ul{
+  list-style: none;
+  font-family: 'Lexend Deca', sans-serif;
+  margin-top: 40px;
+
+}
+
+strong{
+  display: block;
+  color: white;
+  padding-bottom: 10px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+li{
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0.6);
+  letter-spacing: 1px;;
+  font-size: 0.6rem;;
+  padding-bottom: 30px;
+}
+
+.k-span{
+  text-transform: lowercase;
+  color: white;
+}
+
+/* desktop design */
+
+@media (min-width: 376px) and (max-width: 800px) {
+  img{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 800px){
+
+  h1{
+    font-size: 38px;
+    width: 90%;
+  }
+
+  p{
+    width: 90%;
+  }
+
+  img{
+    border-radius: 0 8px 8px 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  ul{
+    display: flex;
+    padding-left: 0;
+  }
+
+  li{
+    margin-right: 80px;
+  }
+
+  .card{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 380px;
+    margin: 150px;
+    border-radius: 8px 8px 8px 8px;
+  }
+
+  .text-part{
+    text-align: left;
+    padding-left: 70px;
+    padding-right: 99px;
+    width: 50%;
+  }
+
+  .image-part{
+    height: 380px;
+  }
+
+  .image-mobile{
+    display: none;
+  }
+
+  .image-desktop{
+    display: block;
+  }
+}
